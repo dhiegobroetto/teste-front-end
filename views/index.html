@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+
+        <link rel="stylesheet" href="../css/style.css">
+
+        <script src="../js/script.js"></script>
+        <script src="../node_modules/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-logo"></div>
+        </nav>
+        <div class="container">
+            <div class="container-login">
+                <div class="card-login">
+                    <div class="card-title">
+                        <span class="primary-title-font">Acessar</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <span class="content-primary-font">E-mail</span>
+                            <input type="text" name="email" id="email" class="form-login" required>
+                        </div>
+                        <div class="row">
+                            <span class="content-primary-font">Senha</span>
+                            <input type="password" name="password" id="password" class="form-login" required>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn btn-primary btn-login" onclick="login()">
+                            <span class="login-text">ENTRAR</span>
+                            <img class="loading-button" src="../assets/loading-button.svg" alt="loading">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            window.onload = function() {
+                validateAuthenticated();
+                
+                let node = document.querySelectorAll(".form-login");
+                let button = document.querySelector(".btn-login");
+                node.forEach(input =>{
+                    input.addEventListener("keydown", ({key}) => {
+                        if (key === "Enter")
+                            button.click();
+                    });
+                });
+            };
+        </script>
+    </body>
+</html>

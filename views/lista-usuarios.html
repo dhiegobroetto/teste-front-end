@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Usuários</title>
+
+        <link rel="stylesheet" href="../css/style.css">
+
+        <script src="../js/script.js"></script>
+        <script src="../node_modules/axios/dist/axios.min.js"></script>
+    </head>
+    <body class="users">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <div class="btn btn-secondary btn-logout" onclick="logout()">
+                    <span>SAIR</span>
+                </div>
+            
+        </nav>
+        <div class="container user">
+            <div class="page-user">
+                <div class="row">
+                    <span class="primary-title-font">Administrar usuários</span>
+                </div>
+                <div class="list-user">
+                    <div class="row">
+                        <div id="grid-user" class="grid-user"></div>
+                    </div>
+                    <div class="row">
+                        <div id="number-pages" class="number-pages"></div>
+                    </div>
+                    <div class="row">
+                        <div id="pagination" class="pagination">
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="loading-page">
+                    <img src="../assets/loading-page.svg" alt="loading">
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            window.onload = function() {
+                validateUnauthenticated()
+                getUsers();
+            };
+        </script>
+    </body>
+</html>
