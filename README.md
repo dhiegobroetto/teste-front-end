@@ -17,6 +17,14 @@ Navegue nas pastas e abra o arquivo:
 
 ``` /teste-front-end/views/index.html ```
 
+# Login
+Para logar no sistema, utilize o seguinte registro:
+
+```
+Login: eve.holt@reqres.in
+Senha: {qualquer coisa}
+```
+
 ### Observação
 Para a compilação do SASS, utilizei o seguinte comando:
 
