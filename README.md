@@ -1,3 +1,37 @@
+
+
+## Versões utilizadas
+
+```
+NPM: 5.6.0
+SASS: 1.30.0 compiled with dart2js 2.10.4 
+```
+
+## Como instalar
+Execute, na raíz do projeto, o comando:
+
+``` npm install ```
+
+## Abrir a página
+Navegue nas pastas e abra o arquivo:
+
+``` /teste-front-end/views/index.html ```
+
+# Login
+Para logar no sistema, utilize o seguinte registro:
+
+```
+Login: eve.holt@reqres.in
+Senha: {qualquer coisa}
+```
+
+### Observação
+Para a compilação do SASS, utilizei o seguinte comando:
+
+``` sass --watch sass:css ```
+
+# Desafio
+
 ![UpperSoft](https://raw.githubusercontent.com/uppersoft/teste-front-end/master/assets/logo-readme.png)
 
 # Teste front-end
